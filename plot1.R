@@ -9,3 +9,6 @@ gap <- y[["Global_active_power"]]
 gap2 <- as.numeric(gap)
 hist(gap2,col='red',xlab="Global Active Power (kilowatts)", main="Global Active Power")
 
+# Save as PNG file
+dev.copy(png, file = "plot1.png")
+dev.off()
