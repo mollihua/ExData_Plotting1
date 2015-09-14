@@ -33,6 +33,7 @@ lines(t,esm3,type="l",col="blue")
 axis(side=2)
 axis(side=1, at=c(0,0.5,1), labels=c("Thu","Fri","Sat"))
 box()
+legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=1,cex=0.75,y.intersp=0.5)
 
 # Save as PNG file
 dev.copy(png, file = "plot3.png")
