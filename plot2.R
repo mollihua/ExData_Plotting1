@@ -21,6 +21,7 @@ t <- t/max(t)            # normalization
 plot(t, gap2, type="l", axes=FALSE, xlab="", ylab="Global Active Power (kilowatts)")
 axis(side=2)
 axis(side=1, at=c(0,0.5,1), labels=c("Thu","Fri","Sat"))
+box()
 
 # Save as PNG file
 dev.copy(png, file = "plot2.png")
