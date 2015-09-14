@@ -1,5 +1,5 @@
 library(data.table)
-data <- fread("../household_power_consumption.txt", na.strings = "?")
+data <- fread("../household_power_consumption.txt",na.strings = "?",colClasses='character')
 x1 <- subset(data, data[[1]]=="1/2/2007")
 x2 <- subset(data, data[[1]]=="2/2/2007")
 y <- rbind(x1,x2)
