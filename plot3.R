@@ -32,7 +32,7 @@ lines(t,esm2,type="l",col="red")
 lines(t,esm3,type="l",col="blue")
 axis(side=2)
 axis(side=1, at=c(0,0.5,1), labels=c("Thu","Fri","Sat"))
-
+box()
 
 # Save as PNG file
 dev.copy(png, file = "plot3.png")
